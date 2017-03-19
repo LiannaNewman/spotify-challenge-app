@@ -26,7 +26,6 @@ class PeopleController < ApplicationController
       name: params[:name],
       favoriteCity: params[:favoriteCity]
     )
-    @person.save
   end
 
   def destroy
