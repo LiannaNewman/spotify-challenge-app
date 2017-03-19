@@ -27,9 +27,4 @@ class PeopleController < ApplicationController
       favoriteCity: params[:favoriteCity]
     )
   end
-
-  def destroy
-    @person = Person.find_by(id: params[:id])
-    @person.destroy
-  end
 end
