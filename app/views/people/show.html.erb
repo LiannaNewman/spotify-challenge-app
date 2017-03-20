@@ -1,0 +1,24 @@
+  <div class="container">
+  <h2 class="page header"> View Person</h2>
+
+  <div>
+    <p> Person's Id: <%= @person.id %> </p>
+  </div>
+
+  <div>
+    <p> Name: <%= @person.name %> </p>
+  </div>
+
+  <div>
+    <p> Favorite City: <%= @person.favoriteCity %></p>
+  </div>
+
+  <div>
+    <%= button_to "Delete Person", "/people/#{@person.id}", {method: :delete, class: "btn btn-danger"} %>
+  </div>
+
+  <div>
+    <h3><%= link_to "Back to Home", :back %></h3>
+  </div>
+
+</div>
