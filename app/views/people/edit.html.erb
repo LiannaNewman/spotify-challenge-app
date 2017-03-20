@@ -1,0 +1,21 @@
+<div class="container">
+  <%= form_tag("/people/#{@person.id}", method: "patch") do %>
+
+    <div class="field">
+      <%= label_tag :name %> <br />
+      <%= text_field_tag :name, @person.name %>
+    </div>
+
+    <div class="field">
+      <%= label_tag :favoriteCity %> <br />
+      <%= text_field_tag :favoriteCity, @person.favoriteCity %>
+    </div>
+
+    <%= submit_tag "Update Person", class: "btn btn-primary" %>
+
+  <% end %>
+
+  <div>
+    <h3><%= link_to "Back to View", :back %></h3>
+  </div>
+</div>
